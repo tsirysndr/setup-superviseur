@@ -1,7 +1,7 @@
 import { homedir } from "node:os";
 import { join } from "node:path";
 import * as action from "@actions/core";
-import { downloadTool, extractZip, extractTar } from "@actions/tool-cache";
+import { downloadTool, extractTar } from "@actions/tool-cache";
 import * as cache from "@actions/cache";
 import { restoreCache, saveCache } from "@actions/cache";
 import { mv } from "@actions/io";
