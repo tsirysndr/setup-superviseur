@@ -82,8 +82,11 @@ function getDownloadUrl(options?: {
   };
   const os = encodeURIComponent(options?.os ?? platform[process.platform]);
   const arch = encodeURIComponent(options?.arch ?? process.arch);
+  const cpu = {
+    x64: "x86_64",
+  };
   const { href } = new URL(
-    `${release}/superviseur_${release}_${arch}-${os}.tar.gz`,
+    `${release}/superviseur_${release}_${cpu[arch] || arch}-${os}.tar.gz`,
     "https://github.com/tsirysndr/superviseur/releases/download/"
   );
 
