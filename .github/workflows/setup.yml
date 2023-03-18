@@ -10,8 +10,13 @@ on:
 
 jobs:
   setup-superviseur:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     continue-on-error: true
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
     steps:
       - uses: actions/checkout@v2
       - name: Setup Superviseur

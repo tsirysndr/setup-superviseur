@@ -1,6 +1,6 @@
 # setup-superviseur
 
-Download, install, and setup Superviseur in GitHub Actions.
+Download, install, and setup [Superviseur](https://github.com/tsirysndr/superviseur) in GitHub Actions.
 
 ## 🚀 Usage
 
