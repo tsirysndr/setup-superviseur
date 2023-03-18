@@ -1,0 +1,19 @@
+name: Setup Superviseur
+description: Download, install, and setup Superviseur to your path.
+author: Tsiry Sandratraina
+branding:
+  icon: play-circle
+  color: green
+inputs:
+  version:
+    description: Superviseur version to install
+    required: false
+    default: v0.1.0-alpha.3
+outputs:
+  version:
+    description: Superviseur version installed
+  cache-hit:
+    description: Was the install cached?
+runs:
+  using: node16
+  main: dist/action.js

@@ -1,0 +1,22 @@
+name: Setup Superviseur
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  setup-superviseur:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Superviseur
+        uses: ./
+        with:
+          version: latest
+      - name: Verify Superviseur
+        run: superviseur --version
