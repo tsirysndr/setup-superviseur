@@ -14,7 +14,10 @@
     "url": "git+https://github.com/tsirysndr/setup-superviseur.git"
   },
   "keywords": [
-    "superviseur"
+    "superviseur",
+    "github",
+    "actions",
+    "setup"
   ],
   "author": "Tsiry Sandratraina <tsiry.sndr@aol.com>",
   "license": "MIT",
@@ -22,6 +25,7 @@
     "url": "https://github.com/tsirysndr/setup-superviseur/issues"
   },
   "homepage": "https://github.com/tsirysndr/setup-superviseur#readme",
+  "type": "module",
   "dependencies": {
     "@actions/cache": "^3.2.1",
     "@actions/core": "^1.10.0",

@@ -17,6 +17,6 @@ jobs:
       - name: Setup Superviseur
         uses: ./
         with:
-          superviseur-version: v0.1.0-alpha.3
+          version: v0.1.0-alpha.3
       - name: Verify Superviseur
         run: superviseur --version

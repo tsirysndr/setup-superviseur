@@ -5,10 +5,10 @@ if (!process.env.RUNNER_TEMP) {
     process.env.RUNNER_TEMP = tmpdir();
 }
 setup({
-    version: action.getInput("superviseur-version"),
+    version: action.getInput("version"),
 })
     .then(({ version, cacheHit }) => {
-    action.setOutput("superviseur-version", version);
+    action.setOutput("version", version);
     action.setOutput("cache-hit", cacheHit);
 })
     .catch((error) => {
